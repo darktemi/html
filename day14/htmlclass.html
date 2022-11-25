@@ -1,0 +1,367 @@
+## HTML
+
+```
+<!DOCTYPE html> ====> root element => 가장 바깥 쪽에 있는 이 문서는 HTML이다 라는 상용구
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
+{: .message }
+
+- 각 태그들을 element라고 함
+- 시작 html을 시작 태그
+- 마지막 /html을 끝 태그
+- 태그와 /태그 사이 내용을 content라고 함
+- 끝 태그를 반드시 적어야하는 element
+- 끝 태그가 없어도 되는 태그
+{: .message }
+
+```
+<br></br> = <br/> = <br>
+```
+{: .message }
+
+예외) meta = 끝태그를 적지 않아야 하는 태그
+{: .message }
+
+---
+## 발전 과정
+
+**HTML 3.x → HTML 4.x → xHTML → HTML5**
+{: .message }
+
+- xHTML => 끝태그 표시 → HTML 문서 분석이 쉽다
+    → 개발자가 수정 및 유지 보수하기 번거롭고 힘듬
+{: .message }
+
+### HTML4 의 doctpye
+```
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+```
+{: .message }
+
+doctype [root element] [문서의 규칙의 공개여부] [문서 규칙의 식별자] [문서 규칙을 정의한 DTD 파일의 URL]
+{: .message }
+
+    - 문서의 규칙
+        - + 는 공인 -는 사설
+        - W3C : 규칙을 만든 조직의 이름
+        - DTD HTML 4.01 : 문서 규칙의 이름
+            DTD => old
+            Schema => new
+        - EN : 문서 규칙의 언어
+        - 주소 : 문서 규칙을 정의한 DTD 파일의 URL
+{: .message }
+
+### HTML5 
+
+div 태그를 → sementic 태그(콘텐트의 의미를 나나태는 태그)로 변경됨
+ex) section, article, aside, header, footer
+{: .message }
+
+### HTML5의 doctpye
+
+```
+<!doctype HTML>
+```
+{: .message }
+
+---
+## 태그
+
+### !DOCTYPE html
+
+- 이 문서는 HTML로 작성되었다는 표기의 상용구
+{: .message }
+
+---
+### <head></head>
+
+- 사이트의 본문 내용을 설명하는 부분
+{: .message }
+
+---
+### <body></body>
+
+- 사이트 본문 내용을 입력하는 부분
+{: .message }
+
+---
+### meta
+
+- 웹 브라우저에는 보이지 않지만 웹 문서와 관련된 정보를 지정할 때 사용
+{: .message }
+
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="">
+```
+{: .message }
+
+---
+### <title></title>
+
+- head 안에 사용해야하며 사이즈 제목을 표기
+{: .message }
+
+---
+### <H1>~<H6> </h1>~</h6>
+
+- 제목을 의미 1부터 크기가 점점 작아짐
+{: .message }
+
+---
+### <p></p>
+
+- 문단을 표기
+- br을 쓰지 않아도 문단이 끝나면 띄어쓰기
+- 내용을 한 줄로 써도 브라우저에서는 우측 끝을 만나면<br>
+  단어 단위로 다음 줄로 출력됨
+{: .message }
+
+---
+### HTML5는 끝 태그가 없어도 된다는 [/] 를 생략해도 됨
+
+- p태그나 br 태그의 끝내그를 생랼해도 됨
+{: .message }
+
+---
+### <a href="주소"></a>
+
+- 해당 주소로 링크를 검
+- 주소 부분에 #[태그]를 입력하면 같은 문서 내에 해당 [태그]로 이동
+{: .message }
+
+---
+### <b></b>
+
+- 볼드체
+{: .message }
+
+---
+### <i></i>
+
+- 기울림 체
+{: .message }
+
+---
+### <small></small>
+
+- 작게
+{: .message }
+
+---
+### <sub></sub>
+
+- 같은 줄보다 조금 아래 출력
+{: .message }
+
+---
+### <sup></sup>
+
+- 같은 줄보다 조금 위에 출력
+{: .message }
+
+---
+### <ins></ins>
+
+- 밑줄
+{: .message }
+
+---
+### <del></del>
+
+글 삭제 선을 그어 출력
+{: .message }
+
+---
+### <ruby></ruby>, <span></span>, <rt></rt>
+
+- ruby는 부모태그 
+- 자식 태그인 span 위에 rt 내용을 작은 글씨로 출력
+{: .message }
+
+---
+### <ol></ol>, <ul></ul>, <li></li>
+
+- ol과 ul은 부모태그
+- odered list와 unordered list로
+- ol은 지정한 type에 따라 숫자, 알파벳, 아랍 숫자 등으로 리스트 표기
+- li는 점으로 리스트 표기
+- ol이나 ul안에 새로운 ol이나 ul이 들어갈 수 있다.
+{: .message }
+
+---
+### <dl></dl> / <dt></dt> / <dd></dd>
+
+- dt : 설명하고자 하는 것
+- dd : 설명 내용
+{: .message }
+
+---
+### <table> [옵션]</table>
+
+- border 옵션 : 테이블의 바깥 테두리 선의 두께 조절
+- <tr></tr> : 한 행을 얘기함 
+- <th></th> : 테이블의 헤더
+- <td></td> : 테이블 내용
+- colspan : 열 병합
+- rowspan 행 병합
+{: .message }
+
+---
+### <!-- 내용 ㅡㅡ>
+
+- 주석달 때 사용
+{: .message }
+
+---
+### <img "링크 주소">
+
+- 이미지 첨부
+- 해당 링크의 이미지가 존재하지 않으면 alt 속성의 값을 출력
+- alt 값을 넣으면 네비게이터가 사진에 마우스를 댓을 때
+  'alt' 라고 읽어줌
+- width 는 사진의 크기 조절
+{: .message }
+
+---
+### <audio src="파일명"></audio>
+
+- 해당 파일명의 음성 파일을 재생할 수 있게 함
+- 보안 정책 상 자동으로 재생되지 않음
+- contols 는 재생 컨트롤 UI
+- controls / selected / checked / readonly 등등 은
+  값을 지정할 필요 없이 존재 유무로 작동
+- type="audio/mp3"를 옵션으로 주면 mp3를 브라우저로 실행
+{: .message }
+
+---
+### video 재생
+```
+<video cotrols>
+    <source src="파일명.mp4" type="video/mp4">
+    <source src="파일명.webm" type="video/webm">
+</video>
+```
+{: .message }
+
+- 해당 파일명의 비디오를 재생
+- 소스에 mp4로 재생하고 안되면 webm으로 재생
+- 옵션 poster="이미지 주소"를 넣으면 해당 이미지로 영상 재생
+{: .message }
+
+---
+### <form></form>
+
+- form은 부모태그
+- 자녀 태그 input type="text" => text 입력창 생성
+
+#### input type 종류
+
+- text => 텍스트 입력창 생성
+- password => **로 표시
+- file => 파일 첨부창 생성
+- submit => 제출 버튼 생성
+- value 옵션 => 기본 값으로 출력
+- button value => value 에 입력한 문자로 입력버튼 생성
+- checkbox
+
+
+- 자녀 태그 input type="text" =>
+- 자녀 태그 input type="text" =>
+- 자녀 태그 input type="text" =>
+- 자녀 태그 input type="text" =>
+- 자녀 태그 input type="text" =>
+- 자녀 태그 input type="text" =>
+- 자녀 태그 input type="text" =>
+- 자녀 태그 input type="text" =>
+- 자녀 태그 input type="text" =>
+
+{: .message }
+
+---
+# HTML 요청 헤더 => request line
+
+## GET 요청 : /-a.html HTTP/1.1
+
+  1. 주소창에 직접 URL 입력 <br>
+
+  2. 링크 클릭: <a href="/html/form/exam01">요청</a><br>
+
+  3. form에서 요청(method 속성 설정하지 않음: 기본 값이 "get")
+    <form action="/html/form/exam01"> => 해당 URL로 요청
+      <button>요청</button>
+    </form>
+    form의 기본은 get 요청, submit으로 출력
+    type 변경 가능
+
+  4. form에서 요청(method 속성의 값을 "get"으로 설정)
+    <form action="/html/form/exam01" method="get">
+      <button>요청</button>
+    </form>
+{: .message }
+
+### get 요청과 post 요청의 차이
+**※ get 요청의 한계**
+  1. 바이너리 데이터를 보낼 수 없다
+    → 바이너리 데이터를 텍스트로 인코딩 하면 가능
+      = base64 규칙으로
+      이미지는 브라우저에서 출력 못함 모든 이미지나 영상은 base64로 인코딩 디코딩 하여 출력
+  2. URI는 apache 서버 8k 크기의 제한때문에
+    대용량 데이터를 보낼 수 없다
+  3. URL은 브라우저 캐시에 보관 된다(방문기록)
+    → 보안이 안된다
+
+---
+### text 와 binary
+  
+  - text는 일반 텍스트 편집기로 편집 가능한 포맷
+    ex) .txt, .rtf, .html, .css, .js, .xml, .json, .properties, .java, .py
+  - 일반 텍스트로 편집 불가 파일이 깨짐
+    binary는 byte 단위로 포맷
+    일반 텍스트 에디터로 편집 불가 → 전용 어플 필요
+    ex) .jpeg, .gif, .png, .doc, .mp3, .mp4, .avi, .wav
+{: .message }
+
+---
+## POST 요청
+
+1) form에서 요청(method 속성의 값을 "post"로 설정)
+<form action="/html/form/exam01" method="post">
+  <button>요청</button>
+</form>
+
+    - 콘텐트 length와 콘텐트 type을 추가
+    - 데이터를 URL에 붙여서 보냄
+{: .message }
+
+content-langth : 15
+content-Type : application/
+
+name=aaa&age=22
+
+※ 특징
+  1. binary 데이터 전송가능
+  2. URL에 노출안됨
+    - URL에 데이터를 포함해야 하는 경우 불편
+  3. 여러 개의 파일 첨부 가능
+  4. 용량 제한이 없다
+
+※ name 옵션이 없는 데이터 값은 서버에 전송하지 않음
+
+기본 인코딩 폼 aplliction/x-www-form-urlencoded
+enctpy ="multipart/form-data" => 인코딩 폼을 바꿈
+        => 파일 자체가 서버에 전송됨
+
+타입 file에 multipl을 붙여야 여러개에 파일 전송 가능
+
+
