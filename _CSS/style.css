@@ -10,7 +10,7 @@ nav{
     }
 #side_left{
     width: 175px;
-    height: 725px;
+    height: 3000px;
     background-color: rgb(140, 210, 250);
     float: left;
     margin: 5px;
@@ -28,7 +28,7 @@ nav{
 }
 #side_left_box2{
     width: 95%;
-    height: 30%;
+    height: px;
     background-color: rgb(140, 210, 250);
     float: left;
     margin: 5px;
