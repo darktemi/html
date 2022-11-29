@@ -3,17 +3,22 @@ a{text-decoration: none;}
 body{
     text-align: center;
     font-family: sans-serif ;
+    background-image: url("../3.jpg");
+    background-size: 85% 120%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 nav{
     text-align: center;
     font-size: 24px;
-    }
+}
 #side_left{
-    width: 175px;
-    height: 3000px;
+    width: 250px;
+    height: 800px;
     background-color: rgb(140, 210, 250);
     float: left;
-    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
     text-align: center;
     font-size: 28px;
 }
@@ -22,15 +27,17 @@ nav{
     height: 300px;
     background-color: rgb(200, 230, 250);
     float: left;
+    box-sizing: border-box;
     margin: 5px;
     text-align: center;
     font-size: 18px;;
 }
 #side_left_box2{
     width: 95%;
-    height: px;
+    height: 270px;
     background-color: rgb(140, 210, 250);
     float: left;
+    box-sizing: border-box;
     margin: 5px;
     text-align: center;
     font-size: 16px;;
@@ -41,6 +48,7 @@ nav{
     height: 95px;
     background-color: rgb(200, 230, 250);
     float: left;
+    box-sizing: border-box;
     margin: 5px;
     text-align: center;
     font-size: 16px;;
