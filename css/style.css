@@ -15,7 +15,6 @@ body{
     background-image: url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
-
 }
 h1 > a:link{color: white;}
 h1 > a:visited{color: white;}
@@ -24,6 +23,10 @@ h1 > a:hover{color: rgb(153, 245, 225);}
 a:link{color: pink;}
 a:visited{color: pink;}
 a:hover{color: rgb(153, 245, 225);}
+
+ul > li{
+    background-color: aliceblue;
+}
 
 div > a:link{color: pink;}
 div > a:visited{color: pink;}
