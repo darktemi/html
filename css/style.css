@@ -1,6 +1,7 @@
 a{text-decoration: none;}
-h1{font-size: 40px;}
+h1{text-align: center; font-size: 50px;}
 ul{list-style-type: none;}
+li{margin-bottom: -60px;}
 @font-face {
     font-family: 'Single Day', cursive;
     src: url(https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&family=Single+Day&display=swap);
@@ -9,22 +10,35 @@ body{
     text-align: center;
     font-family: 'Gamja Flower', cursive;
     font-size: 25px;
-}
-li{margin-bottom: -60px;}
+    padding: 0;
+    margin: 0;
+    background-image: url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
 
-a:link{color: rgb(230, 111, 220);}
-a:visited{color: rgb(230, 111, 220);}
+}
+h1 > a:link{color: white;}
+h1 > a:visited{color: white;}
+h1 > a:hover{color: rgb(153, 245, 225);}
+
+a:link{color: pink;}
+a:visited{color: pink;}
 a:hover{color: rgb(153, 245, 225);}
-a:active{color: rgb(245, 170, 170);}
 
 div > a:link{color: pink;}
 div > a:visited{color: pink;}
 div > a:hover{color: rgb(153, 245, 225);}
-div > a:active{color: white;}
+
+#test{
+    float: left;
+    display: block;
+    font-size: 25px;
+    margin: 10px;
+}
 
 #side_left{
     width: 30%;
-    height: 1100px;
+    height: 1200px;
     float: left;
     padding: 50px;
     background-image: url("../3.jpg");
@@ -32,6 +46,7 @@ div > a:active{color: white;}
     background-repeat: no-repeat;
     background-position: left top;
     margin-bottom: 3000px;
+    margin-right: 20px;
     opacity: 0.8;
     box-sizing: border-box;
     text-align: center;
@@ -66,8 +81,8 @@ div > a:active{color: white;}
     float: left;
     box-sizing: border-box;
     margin: 10px;
-    margin-top: 20px;
-    padding-top: 30px;
+    margin-top: 40px;
+    padding-top: 50px;
     text-align: center;
     font-size: 30px;
 }
