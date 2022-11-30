@@ -1,15 +1,15 @@
 a{text-decoration: none;}
-h1{font-size: 40px;}
+h1{text-align: center; font-size: 40px;}
 ul{list-style-type: none;}
 @font-face {
     font-family: 'Single Day', cursive;
     src: url(https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&family=Single+Day&display=swap);
 }
 body{
-    text-align: center;
     font-family: 'Gamja Flower', cursive;
     font-size: 25px;
 }
+
 li{margin-bottom: -60px;}
 
 a:link{color: rgb(230, 111, 220);}
@@ -32,6 +32,7 @@ div > a:active{color: white;}
     background-repeat: no-repeat;
     background-position: left top;
     margin-bottom: 3000px;
+    margin-right: 40px;
     opacity: 0.8;
     box-sizing: border-box;
     text-align: center;
