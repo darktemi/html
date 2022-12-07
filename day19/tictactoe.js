@@ -1,9 +1,12 @@
 const tr1 = document.getElementById('tr1');
 const tr2 = document.getElementById('tr2');
 const tr3 = document.getElementById('tr3');
+const turn_image = document.createElement('style');
+const turn_image2 = document.createElement('style');
 const trs = [tr1, tr2, tr3];
 const tds = [];
 let turn = 'O';
+
 
 const marking = function(event) {
     const trNumber = trs.indexOf(event.target.parentNode);
@@ -70,8 +73,12 @@ const marking = function(event) {
         } else {// 다 안 찼으면
             if (turn === 'O') {
                 turn = 'X';
+                turn_image2.innerHTML="td:hover{background-image: url(X.jpg); background-size: cover}";
+                document.body.appendChild(turn_image2);
             } else {
                 turn = 'O';
+                turn_image.innerHTML="td:hover{background-image: url(O.jpg); background-size: cover}";
+                document.body.appendChild(turn_image);
             }
         } 
     }
@@ -93,5 +100,11 @@ for (let k = 0; k < 9; k++) {
     td.addEventListener('click', marking);
 }; //getElementsByTagName은 해당 태그의 문자열을 취득
 
+
+turn_image.innerHTML="td:hover{background-image: url(O.jpg); background-size: cover}";
+document.body.appendChild(turn_image);
+    
+
+        
 console.log(trs, tds);
 
