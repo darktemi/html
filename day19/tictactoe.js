@@ -10,7 +10,9 @@ let turn = 'O';
 
 const marking = function(event) {
     const trNumber = trs.indexOf(event.target.parentNode);
+    console.log(trNumber);
     const tdNumber = tds[trNumber].indexOf(event.target);
+    console.log(trNumber, tdNumber);
 
     if (tds[trNumber][tdNumber].textContent !== '') {// 칸이 이미 채워져 있는가?
     } else {
@@ -64,11 +66,8 @@ const marking = function(event) {
 
             // 초기화
             turn = 'O';
-            tds.forEach(function (trs) {
-                trs.forEach(function (td) {
-                    td.textContent = '';
-                });
-            });// forEach 매서드는 파라미터로 주어진 함수를 배열요소 각각에 대해 실행
+            tds.forEach((trs) => trs.forEach((td) => td.textContent = ''));
+            // forEach 매서드는 파라미터로 주어진 함수를 배열요소 각각에 대해 실행
 
         } else {// 다 안 찼으면
             if (turn === 'O') {
