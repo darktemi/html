@@ -1,20 +1,12 @@
-#table {
+table {
     border-collapse: collapse;
     text-align: center;
     font-size: 50px;
 }
-.td{
+td{
     border: 3px black solid;
     width: 150px;
     height: 150px;
     text-align: center;
     
 }
-/* #result{
-    border: 3px red solid;
-    width: 462px;
-    height: 70px;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 15px;
-} */

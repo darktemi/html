@@ -1,0 +1,11 @@
+#table{
+  width: 500px;
+  height: 500px;
+  /* border: 1px red solid; */
+}
+
+button{
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
