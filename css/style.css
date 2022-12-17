@@ -11,7 +11,7 @@ body{
     font-family: 'Gamja Flower', cursive;
     font-size: 25px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-colorful-watercolor-minimalist-may-fourth-youth-festival-advertising-background-picture-image_1023861.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,19 +22,18 @@ a:hover{color: rgb(153, 245, 225);}
 
 .profile, .class, .daily{
     background-color: aliceblue;
-    margin: 0px 90px;
+    margin: 0 auto;
     opacity: 0.8;
 }
 .social{
     background-color: aliceblue;
     float: left;
-    margin: 10px;
+    margin: 0 auto;
     padding: 0px 5px;
 }
 #volley_home{
     float: left;
     display: block;
-    font-size: 25px;
     margin: 10px;
 }
 #side_left{

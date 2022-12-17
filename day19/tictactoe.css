@@ -3,14 +3,26 @@
     text-align: center;
     font-size: 50px;
 }
-.td{
+#td {
     border: 3px black solid;
     width: 150px;
     height: 150px;
     text-align: center;
-    
+    background-size: cover;
 }
+<<<<<<< HEAD
 /* #result{
+=======
+.td {
+    border: 3px black solid;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-size: cover;
+}
+
+#result {
+>>>>>>> 52c33df35e6bf21837bc52b7d1cc416f4edb28f0
     border: 3px red solid;
     width: 462px;
     height: 70px;
